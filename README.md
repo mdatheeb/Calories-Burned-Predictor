@@ -23,19 +23,16 @@ heart rate, body temperature → calories burned).
 ```
 calories-predictor/
 ├── app.py              # Streamlit app (user-facing interface)
-├── train.py             # Model training & evaluation script
-├── generate_data.py     # Dataset generation script
-├── calories_data.csv    # Training data
+├── linear_regression.py             # Model training & evaluation script
+├── calories.csv         # Training data
 ├── model.pkl             # Trained Linear Regression model
 ├── scaler.pkl             # Fitted StandardScaler
-├── features.pkl           # Feature order used by the model
-└── requirements.txt       # Python dependencies
+└──features.pkl           # Feature order used by the model
 ```
 
 ## Run Locally
 ```bash
-pip install -r requirements.txt
-python train.py       # optional, retrains the model
+python linear_regression.py       # optional, retrains the model
 streamlit run app.py
 ```
 
@@ -55,4 +52,4 @@ streamlit run app.py
 Python · scikit-learn · pandas · NumPy · Streamlit
 
 ## Author
-Md Atheeb — GitHub: github.com/mdatheeb · LinkedIn: linkedin.com/in/md-atheeb-0b9a77327
+Md Atheeb 
