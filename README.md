@@ -23,7 +23,7 @@ heart rate, body temperature → calories burned).
 ```
 calories-predictor/
 ├── app.py              # Streamlit app (user-facing interface)
-├── linear_regression.py             # Model training & evaluation script
+├── linear_regression.py  # Model training & evaluation script
 ├── calories.csv         # Training data
 ├── model.pkl             # Trained Linear Regression model
 ├── scaler.pkl             # Fitted StandardScaler
@@ -35,12 +35,6 @@ calories-predictor/
 python linear_regression.py       # optional, retrains the model
 streamlit run app.py
 ```
-
-## Deploy (Streamlit Community Cloud — free)
-1. Push this repo to GitHub (public)
-2. Go to share.streamlit.io and sign in with GitHub
-3. Click New app, select this repo, and set the main file to app.py
-4. Click Deploy — live in a couple of minutes
 
 ## Key Takeaways
 - End-to-end ML pipeline: data preprocessing → feature scaling → model training/evaluation → deployment
