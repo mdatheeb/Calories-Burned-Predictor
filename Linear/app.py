@@ -7,11 +7,15 @@ st.set_page_config(page_title="Calories Burned Predictor",
                    page_icon="🔥", layout="centered")
 
 
+import os
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
 @st.cache_resource
 def load_artifacts():
-    model = joblib.load('model.pkl')
-    scaler = joblib.load('scaler.pkl')
-    features = joblib.load('features.pkl')
+    model = joblib.load(os.path.join(BASE_DIR, 'model.pkl'))
+    scaler = joblib.load(os.path.join(BASE_DIR, 'scaler.pkl'))
+    features = joblib.load(os.path.join(BASE_DIR, 'features.pkl'))
     return model, scaler, features
 
 
