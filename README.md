@@ -4,7 +4,7 @@ A Linear Regression project that predicts calories burned during exercise based 
 gender, age, height, weight, exercise duration, heart rate, and body temperature.
 
 ## Live Demo
-(i'm too lazy)
+(https://calories-burned-predictor-atb.streamlit.app/)
 
 ## Overview
 This project walks through a full ML workflow — from raw data to a deployed,
